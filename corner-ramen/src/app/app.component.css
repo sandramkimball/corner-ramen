@@ -1,0 +1,15 @@
+
+div{
+    background: #f7f0cc;
+    text-align: center;
+    font-size: 2rem;
+    margin: 5rem auto;
+    width: 60vw;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+div h4{
+    text-align: left;
+    font-size: 1.5rem
+}
