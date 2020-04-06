@@ -1,2 +1,6 @@
-<app-item *ngFor="let card of card" [card]="card">
+<app-item 
+    *ngFor="let card of card" 
+    [card]="card"
+    (deleteProd)="deleteProd($event)"
+>
 </app-item>
