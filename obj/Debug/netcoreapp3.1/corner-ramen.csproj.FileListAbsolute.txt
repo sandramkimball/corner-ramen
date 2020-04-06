@@ -1,0 +1,13 @@
+C:\Users\Sandra\Documents\SIDE PROJECTS\corner-ramen\bin\Debug\netcoreapp3.1\corner-ramen.exe
+C:\Users\Sandra\Documents\SIDE PROJECTS\corner-ramen\bin\Debug\netcoreapp3.1\corner-ramen.deps.json
+C:\Users\Sandra\Documents\SIDE PROJECTS\corner-ramen\bin\Debug\netcoreapp3.1\corner-ramen.runtimeconfig.json
+C:\Users\Sandra\Documents\SIDE PROJECTS\corner-ramen\bin\Debug\netcoreapp3.1\corner-ramen.runtimeconfig.dev.json
+C:\Users\Sandra\Documents\SIDE PROJECTS\corner-ramen\bin\Debug\netcoreapp3.1\corner-ramen.dll
+C:\Users\Sandra\Documents\SIDE PROJECTS\corner-ramen\bin\Debug\netcoreapp3.1\corner-ramen.pdb
+C:\Users\Sandra\Documents\SIDE PROJECTS\corner-ramen\obj\Debug\netcoreapp3.1\corner-ramen.csprojAssemblyReference.cache
+C:\Users\Sandra\Documents\SIDE PROJECTS\corner-ramen\obj\Debug\netcoreapp3.1\corner-ramen.csproj.CoreCompileInputs.cache
+C:\Users\Sandra\Documents\SIDE PROJECTS\corner-ramen\obj\Debug\netcoreapp3.1\corner-ramen.AssemblyInfoInputs.cache
+C:\Users\Sandra\Documents\SIDE PROJECTS\corner-ramen\obj\Debug\netcoreapp3.1\corner-ramen.AssemblyInfo.cs
+C:\Users\Sandra\Documents\SIDE PROJECTS\corner-ramen\obj\Debug\netcoreapp3.1\corner-ramen.dll
+C:\Users\Sandra\Documents\SIDE PROJECTS\corner-ramen\obj\Debug\netcoreapp3.1\corner-ramen.pdb
+C:\Users\Sandra\Documents\SIDE PROJECTS\corner-ramen\obj\Debug\netcoreapp3.1\corner-ramen.genruntimeconfig.cache
