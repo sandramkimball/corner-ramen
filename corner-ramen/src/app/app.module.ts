@@ -10,8 +10,8 @@ import { ItemComponent } from './components/item/item.component';
 import { HeaderComponent } from './components/layout/header/header.component';
 import { AddProdComponent } from './components/add-prod/add-prod.component';
 import { ShopComponent } from './components/shop/shop.component';
-import { SocialComponent } from './components/social/review.component';
-import { HashtagComponent } from './hashtag/hashtag.component';
+import { ReviewComponent } from './components/review/review.component';
+import { HashtagComponent } from './components//hashtag/hashtag.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import { HashtagComponent } from './hashtag/hashtag.component';
     HeaderComponent,
     AddProdComponent,
     ShopComponent,
-    SocialComponent,
+    ReviewComponent,
     HashtagComponent
   ],
   imports: [

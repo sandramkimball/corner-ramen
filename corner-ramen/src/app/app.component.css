@@ -10,6 +10,7 @@
     background: url('https://images.unsplash.com/photo-1533567918232-40709b93fc5b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=993&q=80');
     background-size: cover;
     background-position: center;
+    font-family: 'Dosis', sans-serif;
 }
 
 .welcome h3{
@@ -20,6 +21,7 @@
     background: #0000007a;
     width: 50%;
     margin-top: 20vh;
+    font-family: 'Dosis', sans-serif;
 }
 
 .about{
@@ -31,10 +33,11 @@
 
 .about p{ 
     padding: 25px 0;     
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     width: 45%;
     margin: 0 auto;
     text-align: center;
+    font-family: 'Dosis', sans-serif;
 }
 
 .vibe{
