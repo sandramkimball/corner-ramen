@@ -15,7 +15,7 @@ const httpOptions = {
 })
 export class ProdService {
 
-  productUrl:string = 'https://www.themealdb.com/api/json/v1/1/search.php?s=noodles'
+  productUrl:string = ''
   todosLimit = '?_limit=10' 
 
   constructor(private http:HttpClient) { }
@@ -26,9 +26,14 @@ export class ProdService {
   }
 
   // Add Prod
-  addProd(card: Card):Observable<any>{
+  addProd(card:Card):Observable<any>{
     const url = `${this.productUrl}/${card.id}`;
     return this.http.put(url, card, httpOptions)
+  }
+
+  // Add Prod
+  addNewProd(card:Card):Observable<Card>{
+    return this.http.post<Card>(this.productUrl, card, httpOptions)
   }
   
   // Delete Prod

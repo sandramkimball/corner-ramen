@@ -1,15 +1,51 @@
 
-div{
-    background: #f7f0cc;
+.welcome{
     text-align: center;
     font-size: 2rem;
     margin: 5rem auto;
     width: 60vw;
+    height: 50vh;
     padding: 10px;
+    border-radius: 6px;
+    background: url('https://images.unsplash.com/photo-1533567918232-40709b93fc5b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=993&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+.welcome h3{
+    margin: auto;
+    font-size: 4rem;
+    font-weight: 600;
+    color: white;
+    background: #0000007a;
+    width: 50%;
+    margin-top: 20vh;
+}
+
+.about{
+    width: 60vw;
+    margin: 10px auto;
+    background: #f7f0cc;
     border-radius: 6px;
 }
 
-div h4{
-    text-align: left;
-    font-size: 1.5rem
+.about p{ 
+    padding: 25px 0;     
+    font-size: 1.5rem;
+    width: 45%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.vibe{
+    margin: 5vw auto;
+    display: flex;
+    width: 60vw;
+    justify-content: space-between;
+}
+
+.vibe img{
+    width: 27vw;
+    height: 30vw;
+    object-fit: cover;
 }

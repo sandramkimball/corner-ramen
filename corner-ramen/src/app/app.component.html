@@ -1,15 +1,19 @@
 <section>
-  <div>
-    <img src='https://cdn130.picsart.com/261791116010212.png?r1024x1024' alt='bowl of ramen cartoon cute'/>
-    <h1>{{ name }}</h1>
-    <h3>A Hot Bowl of Happy</h3>
-    <h4>After a vacation to South Korea, owner Sandy opened Corner Ramen as a one-stop-shop for all those last minute lunches, busy bees, cute first dates and relaxing get-togethers with friends. We have all your fave ramen, noodles, beers and snacks...come microwave a bowl and just relax.</h4>
+<app-header></app-header>
+  <div class='welcome'>  
+    <h3>Corner Ramen</h3>
   </div>
-
-  <div>
-    <h3>拉麺 ラーメン 라면</h3>
-    <h4>"Pulled noodles" is a Japanese reinvention of the Chinese wheat noodles, which were introduced to the large island in the 1660s by neo-Confucian scholar (and refugee) Zhu Shunsui. Maybe. Or perhaps it wasn't until 1859 with the boom of Yokohama Chinatown.</h4>
+  <div class='about'>
+    <p>After a vacation to South Korea, owner Sandy opened Corner Ramen as a one-stop-shop for all those last minute lunches, busy bees, cute first dates and relaxing get-togethers with friends. We have all your fave ramen, noodles, beers and snacks...come microwave a bowl and just relax.</p>
+  </div>
+  <div class='vibe'>
+    <img src='https://thumbs.dreamstime.com/b/instant-noodles-27484196.jpg' alt='rows of cup noodles'/>
+    <img src='https://cdn.foodbeast.com/wp-content/uploads/2019/04/instant-noodle-revolution-featured-min-1.jpg' alt='cup noodles'/>
   </div>
   
+  
   <router-outlet></router-outlet>
+  <app-social></app-social>
+  <app-shop></app-shop>
+  <app-card></app-card>
 </section>

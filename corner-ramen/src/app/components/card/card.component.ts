@@ -23,4 +23,10 @@ export class CardComponent implements OnInit {
     // Remove from server
     this.prodService.deleteProd(card).subscribe();
   }
+
+  addNewProd(card:Card){
+    this.prodService.addNewProd(card).subscribe(product=> {
+      this.card.push(product)
+    });
+  }
 }
