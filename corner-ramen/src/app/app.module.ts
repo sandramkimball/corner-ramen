@@ -9,8 +9,9 @@ import { CardComponent } from './components/card/card.component';
 import { ItemComponent } from './components/item/item.component';
 import { HeaderComponent } from './components/layout/header/header.component';
 import { AddProdComponent } from './components/add-prod/add-prod.component';
-import { ShopComponent } from './shop/shop.component';
-import { SocialComponent } from './social/social.component';
+import { ShopComponent } from './components/shop/shop.component';
+import { SocialComponent } from './components/social/review.component';
+import { HashtagComponent } from './hashtag/hashtag.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SocialComponent } from './social/social.component';
     HeaderComponent,
     AddProdComponent,
     ShopComponent,
-    SocialComponent
+    SocialComponent,
+    HashtagComponent
   ],
   imports: [
     BrowserModule,
