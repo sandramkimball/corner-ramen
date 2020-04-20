@@ -1,7 +1,7 @@
 export class Review{
-    //fields we want:
+    //declare fields we want:
     id:number; 
-    img?:string;
-    username?:string;
-    text?:string; 
+    username:string;
+    comment?:string; 
+    imgage_url?:string;
 }

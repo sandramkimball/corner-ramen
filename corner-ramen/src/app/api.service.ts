@@ -55,7 +55,9 @@ export class ApiService {
   // mock api with localhost server
   // be sure to add to whatever_page.component.ts (will user review)
   public get(){
-    return this.httpClient.get(this.SERVER_URL).pipe(catchError(this.handleError))
+    return this.httpClient
+    .get(this.SERVER_URL)
+    .pipe(catchError(this.handleError))
   }
 
   public sendGetRequest(){
@@ -70,7 +72,7 @@ export class ApiService {
   }
 
   public sendGetRequestToUrl(url: string){
-      // this takes URL to which we need to send GET req
+      // modified to take in URL as param instead of calling saved URL
       return this.httpClient
       .get(url, {observe: 'response'})
       .pipe(retry(3),

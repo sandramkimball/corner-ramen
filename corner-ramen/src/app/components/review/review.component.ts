@@ -21,7 +21,8 @@ export class ReviewComponent implements OnInit {
     })  
   }
 
-  // pagination from data.service.ts that parses header? link? data?
+  // pagination from data.service.ts 
+  // parses, uh, the header? link? data?
   public firstPage() {
     this.reviews = [];
     this.apiService.sendGetRequestToUrl(this.apiService.first).pipe(takeUntil(this.destroy$)).subscribe((res: HttpResponse<any>) => {
