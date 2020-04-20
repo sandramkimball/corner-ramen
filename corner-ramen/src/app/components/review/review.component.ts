@@ -3,6 +3,7 @@ import { Review } from '../../models/Review'
 // import { ReviewService } from '../../services/review.service'
 import { ApiService } from '../../api.service'
 import { HttpResponse } from '@angular/common/http';
+import { retry } from 'rxjs/operators'
 
 @Component({
   selector: 'app-review',
@@ -15,7 +16,10 @@ export class ReviewComponent implements OnInit {
   reviews = [];
   constructor(private apiService: ApiService) { }
   ngOnInit(){
-    this.apiService.sendGetRequest().pipe(takeUntil(this.destroy$)).subscribe((res: HttpResponse<any>)=>{  
+    this.apiService
+    .sendGetRequest()
+    .pipe(retry(3))
+    .subscribe((res: HttpResponse<any>)=>{  
       console.log(res);  
       this.reviews = res.body;  
     })  
@@ -25,7 +29,10 @@ export class ReviewComponent implements OnInit {
   // parses, uh, the header? link? data?
   public firstPage() {
     this.reviews = [];
-    this.apiService.sendGetRequestToUrl(this.apiService.first).pipe(takeUntil(this.destroy$)).subscribe((res: HttpResponse<any>) => {
+    this.apiService
+    .sendGetRequestToUrl(this.apiService.first)
+    .pipe(retry(3))
+    .subscribe((res: HttpResponse<any>) => {
       console.log(res);
       this.reviews = res.body;
     })
@@ -34,7 +41,10 @@ export class ReviewComponent implements OnInit {
   public previousPage() {
     if (this.apiService.prev !== undefined && this.apiService.prev !== '') {
       this.reviews = [];
-      this.apiService.sendGetRequestToUrl(this.apiService.prev).pipe(takeUntil(this.destroy$)).subscribe((res: HttpResponse<any>) => {
+      this.apiService
+      .sendGetRequestToUrl(this.apiService.prev)
+      .pipe(retry(3))
+      .subscribe((res: HttpResponse<any>) => {
         console.log(res);
         this.reviews = res.body;
       })
@@ -45,7 +55,10 @@ export class ReviewComponent implements OnInit {
   public nextPage() {
     if (this.apiService.next !== undefined && this.apiService.next !== '') {
       this.reviews = [];
-      this.apiService.sendGetRequestToUrl(this.apiService.next).pipe(takeUntil(this.destroy$)).subscribe((res: HttpResponse<any>) => {
+      this.apiService
+      .sendGetRequestToUrl(this.apiService.next)
+      .pipe(retry(3))
+      .subscribe((res: HttpResponse<any>) => {
         console.log(res);
         this.reviews = res.body;
       })
@@ -54,7 +67,10 @@ export class ReviewComponent implements OnInit {
 
   public lastPage() {
     this.reviews = [];
-    this.apiService.sendGetRequestToUrl(this.apiService.last).pipe(takeUntil(this.destroy$)).subscribe((res: HttpResponse<any>) => {
+    this.apiService
+    .sendGetRequestToUrl(this.apiService.last)
+    .pipe(retry(3))
+    .subscribe((res: HttpResponse<any>) => {
       console.log(res);
       this.reviews = res.body;
     })
