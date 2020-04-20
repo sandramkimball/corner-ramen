@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "corner-ramen": {
+      "hosting": {
+        "corner-ramen": [
+          "corner-ramen"
+        ]
+      }
+    }
+  }
+}

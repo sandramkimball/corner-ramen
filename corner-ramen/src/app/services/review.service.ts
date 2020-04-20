@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import {HttpClient } from '@angular/common/http'
+import {HttpClient } from '@angular/common/http';
 import {Observable} from 'rxjs'
-import {Review} from '../models/Review'
+import {Review} from '../models/Review';
 
 
 @Injectable({
@@ -18,4 +18,5 @@ export class ReviewService {
     return this.http.get<Review[]>(this.reviewUrl);
     
   }
+
 }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Review} from 'src/app/models/Review'
-import {ReviewService} from '../../services/review.service'
+import {ApiService} from '../../api.service'
 
 @Component({
   selector: 'app-hashtag',
@@ -8,12 +8,14 @@ import {ReviewService} from '../../services/review.service'
   styleUrls: ['./hashtag.component.css']
 })
 export class HashtagComponent implements OnInit {
-  review: Review[]
-  constructor(private reviewService: ReviewService) { }
+  reviews: Review[]
+  constructor(private apiService: ApiService) { }
 
   ngOnInit() {
-    this.reviewService.getReviews().subscribe(reviews=>{
-      this.review = reviews
+    this.apiService
+    .sendGetRequest()
+    .subscribe(res=>{
+      this.reviews = res
     });
   }
 

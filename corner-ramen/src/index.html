@@ -9,6 +9,29 @@
   <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDRnFYdbSuZ8yoZlc8qSRgbUIpvS_OwW7U",
+    authDomain: "corner-ramen.firebaseapp.com",
+    databaseURL: "https://corner-ramen.firebaseio.com",
+    projectId: "corner-ramen",
+    storageBucket: "corner-ramen.appspot.com",
+    messagingSenderId: "231760866820",
+    appId: "1:231760866820:web:8aeaae2f141239d6becf51",
+    measurementId: "G-R4NQE9YSWL"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
   <app-root></app-root>
 </body>
 </html>
