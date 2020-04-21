@@ -19,7 +19,7 @@ export class HashtagComponent implements OnInit {
     .getReviews()
     // clone data obj using its template model shape <Review>
     .subscribe((data) =>{  
-      this.reviews = [data]
+      this.reviews = data
       console.log('reviews, hashtag.comp', this.reviews)
       // this.reviews = results.map(r=> new Review(r.id, r.username, r.comment, r.image_url))
     })  

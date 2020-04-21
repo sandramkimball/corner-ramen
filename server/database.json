@@ -3,7 +3,7 @@
         {
             "id": 1,
             "username": "LindsayDear12",
-            "comment": "Date night with my man",
+            "comment": "Date night with my man 😍😍❤️",
             "image_url": "https://images.unsplash.com/photo-1529175283207-194a414b9ffa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
         },
         
@@ -16,8 +16,14 @@
         {
             "id": 3,
             "username": "TheLuGarcia",
-            "comment": "Spicy Ramen Challenge FAIL haha",
+            "comment": "🔥🔥Spicy Ramen Challenge FAIL haha🔥🔥 SOS Max aboutta DIE🚒",
             "image_url": "https://i.ytimg.com/vi/CaSdea4UykE/maxresdefault.jpg"
+        },
+        {
+            "id": 4,
+            "username": "CiciPanda",
+            "comment": "Nothing better than hot ramen when your sick. Picke up the real stuff at the market.",
+            "image_url": "https://th.bing.com/th/id/OIP.lP63wgulm0dkNXj2R7LcXAHaLG?pid=Api&rs=1"
         }
     ],
 
@@ -26,31 +32,36 @@
         "id": 1,
         "img": "http://blogs.ubc.ca/ksw4268/files/2013/01/shin_ramyun1.jpg",
         "title": "Spicy",
-        "text": "Are you brave enough for the spicy chili bowl?"
+        "text": "Are you brave enough for the spicy chili bowl?",
+        "price": ".99"
       },
       {
         "id": 2,
         "img": "https://2.bp.blogspot.com/-wpi7UxNkjjc/WFM7oUrP_fI/AAAAAAADbA4/uOlbkYc02zUWpwlaZCc4thw17nlzBVgSgCLcB/s640/1P1260762.JPG",
         "title": "Cheesy",
-        "text": "Three cheese of vertigo."
+        "text": "Three cheese of vertigo.",
+        "price": ".99"
       },
       {
         "id": 3,
         "img": "https://images-na.ssl-images-amazon.com/images/I/518uAL1wWHL.jpg",
         "title": "Vegetable",
-        "text": "Organic enough."
+        "text": "Organic enough.",
+        "price": ".99"
       },
       {
         "id": 4,
         "img": "https://images-na.ssl-images-amazon.com/images/I/518uAL1wWHL.jpg",
         "title": "Pollo Loco",
-        "text": "Your abuela would be proud."
+        "text": "Your abuela would be proud.",
+        "price": ".99"
       },
       {
         "id": 5,
         "img": "https://2.bp.blogspot.com/-wpi7UxNkjjc/WFM7oUrP_fI/AAAAAAADbA4/uOlbkYc02zUWpwlaZCc4thw17nlzBVgSgCLcB/s640/1P1260762.JPG",
         "title": "Lemongrass Ginger",
-        "text": "Soothe your soul, body and mind."
+        "text": "Soothe your soul, body and mind.",
+        "price": ".99"
       }
     ]
 }
