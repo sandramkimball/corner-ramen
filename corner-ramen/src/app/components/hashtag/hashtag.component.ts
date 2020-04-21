@@ -1,7 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Review } from 'src/app/models/Review'
-import { HttpResponse } from '@angular/common/http';
-import {ApiService} from '../../api.service'
+import { ApiService } from '../../api.service'
 
 @Component({
   selector: 'app-hashtag',
@@ -9,16 +8,21 @@ import {ApiService} from '../../api.service'
   styleUrls: ['./hashtag.component.css']
 })
 export class HashtagComponent implements OnInit {
-  review: Review[]
+  @Input() review:Review
+
+  reviews=[]
   constructor(private apiService: ApiService) { }
 
-
+  
   ngOnInit() {
-    return this.apiService
-    .sendGetRequest()
-    .subscribe( (res: HttpResponse<any> )=>{
-      this.review = res.body
-    });
+    this.apiService
+    .getReviews()
+    // clone data obj using its template model shape <Review>
+    .subscribe((data) =>{  
+      this.reviews = [data]
+      console.log('reviews, hashtag.comp', this.reviews)
+      // this.reviews = results.map(r=> new Review(r.id, r.username, r.comment, r.image_url))
+    })  
   }
 
 }

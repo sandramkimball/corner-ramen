@@ -1,10 +1,9 @@
 <div>
     <p>What's In Stock</p>
-    <ul>
-        <li>Ultimate Spicy</li>
-        <li>Pollo Loco</li>
-        <li>Beef</li>
-        <li>Vegan Cherry Blossom</li>
-        <li>Death by Cheese</li>
-    </ul>
+    <div>
+        <app-product 
+            *ngFor="let products of products" 
+            [product]="product">
+        </app-product>
+    </div>
 </div>

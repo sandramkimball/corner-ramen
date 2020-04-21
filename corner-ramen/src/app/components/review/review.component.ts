@@ -1,7 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Review } from '../../models/Review'
-import { ApiService } from '../../api.service'
-import { HttpResponse } from '@angular/common/http';
+// import { ApiService } from '../../api.service'
 
 @Component({
   selector: 'app-review',
@@ -9,19 +8,18 @@ import { HttpResponse } from '@angular/common/http';
   styleUrls: ['./review.component.css']
 })
 export class ReviewComponent implements OnInit {
+  @Input() review:Review
 
-  reviews=[]
-  constructor(private apiService: ApiService) { }
+  // reviews=[]
+  constructor() { }
 
-  ngOnInit(){
-    this.apiService
-    .getReviews()
-    // clone data obj using its template model shape <Review>
-    .subscribe((data: HttpResponse<Review>) =>{  
-      this.reviews = [data]
-      console.log(data)
-      // this.reviews = results.map(r=> new Review(r.id, r.username, r.comment, r.image_url))
-    })  
+  ngOnInit() :void {
+    // this.apiService
+    // .getReviews()
+    // .subscribe((data) =>{  
+    //   this.reviews = [data]
+    //   console.log(data)
+    // })  
   }
     
 }

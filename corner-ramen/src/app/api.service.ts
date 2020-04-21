@@ -3,6 +3,7 @@ import { HttpClient, HttpErrorResponse, HttpResponse, HttpParams, HttpHeaders } 
 import { tap, retry, catchError } from 'rxjs/operators';
 import { Observable, throwError } from 'rxjs';
 import { Review } from './models/Review';
+import { Product } from './models/Product';
 
 @Injectable({
   providedIn: 'root'
@@ -68,15 +69,15 @@ export class ApiService {
     .pipe(catchError(this.handleError))
   }
 
-  public getProducts(){
+  public getProducts():Observable<Product[]>{
     return this.httpClient
-    .get('http://localhost:3000/products')
+    .get<Product[]>('http://localhost:3000/products')
     .pipe(catchError(this.handleError))
   }
 
-  public getReviews(){
+  public getReviews():Observable<Review[]>{
     return this.httpClient
-    .get('http://localhost:3000/reviews', { observe: 'response', responseType: 'json' })
+    .get<Review[]>('http://localhost:3000/reviews')
     .pipe(catchError(this.handleError))
   }
 

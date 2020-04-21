@@ -26,19 +26,31 @@
         "id": 1,
         "img": "http://blogs.ubc.ca/ksw4268/files/2013/01/shin_ramyun1.jpg",
         "title": "Spicy",
-        "text": "Are you brave enough for the spicy chili bowl?",
+        "text": "Are you brave enough for the spicy chili bowl?"
       },
       {
         "id": 2,
         "img": "https://2.bp.blogspot.com/-wpi7UxNkjjc/WFM7oUrP_fI/AAAAAAADbA4/uOlbkYc02zUWpwlaZCc4thw17nlzBVgSgCLcB/s640/1P1260762.JPG",
         "title": "Cheesy",
-        "text": "Three cheese of vertigo.",
+        "text": "Three cheese of vertigo."
       },
       {
         "id": 3,
         "img": "https://images-na.ssl-images-amazon.com/images/I/518uAL1wWHL.jpg",
         "title": "Vegetable",
-        "text": "Organic enough.",
+        "text": "Organic enough."
+      },
+      {
+        "id": 4,
+        "img": "https://images-na.ssl-images-amazon.com/images/I/518uAL1wWHL.jpg",
+        "title": "Pollo Loco",
+        "text": "Your abuela would be proud."
+      },
+      {
+        "id": 5,
+        "img": "https://2.bp.blogspot.com/-wpi7UxNkjjc/WFM7oUrP_fI/AAAAAAADbA4/uOlbkYc02zUWpwlaZCc4thw17nlzBVgSgCLcB/s640/1P1260762.JPG",
+        "title": "Lemongrass Ginger",
+        "text": "Soothe your soul, body and mind."
       }
     ]
 }
