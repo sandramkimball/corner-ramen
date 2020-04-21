@@ -1,2 +1,2 @@
 # corner-ramen
-Practice Side Project 
+Practice Side Project using Angular.

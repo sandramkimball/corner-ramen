@@ -1,0 +1,44 @@
+{
+    "reviews": [
+        {
+            "id": 1,
+            "username": "LindsayDear12",
+            "comment": "Date night with my man",
+            "image_url": "https://images.unsplash.com/photo-1529175283207-194a414b9ffa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+        },
+        
+        {
+            "id": 2,
+            "username": "RayRayShine",
+            "comment": "I've never seen so many noodles in mah life XD",
+            "image_url": "https://st3.depositphotos.com/1035886/18205/i/1600/depositphotos_182054852-stock-photo-ramen-noodle-store.jpg"
+        },
+        {
+            "id": 3,
+            "username": "TheLuGarcia",
+            "comment": "Spicy Ramen Challenge FAIL haha",
+            "image_url": "https://i.ytimg.com/vi/CaSdea4UykE/maxresdefault.jpg"
+        }
+    ],
+
+    "products": [ 
+      {
+        "id": 1,
+        "img": "http://blogs.ubc.ca/ksw4268/files/2013/01/shin_ramyun1.jpg",
+        "title": "Spicy",
+        "text": "Are you brave enough for the spicy chili bowl?",
+      },
+      {
+        "id": 2,
+        "img": "https://2.bp.blogspot.com/-wpi7UxNkjjc/WFM7oUrP_fI/AAAAAAADbA4/uOlbkYc02zUWpwlaZCc4thw17nlzBVgSgCLcB/s640/1P1260762.JPG",
+        "title": "Cheesy",
+        "text": "Three cheese of vertigo.",
+      },
+      {
+        "id": 3,
+        "img": "https://images-na.ssl-images-amazon.com/images/I/518uAL1wWHL.jpg",
+        "title": "Vegetable",
+        "text": "Organic enough.",
+      }
+    ]
+}
