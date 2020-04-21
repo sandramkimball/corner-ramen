@@ -14,14 +14,14 @@ export class CardComponent implements OnInit {
   products = []
   constructor(private apiService: ApiService) { }
 
-  ngOnInit() {
-    this.apiService
-    .getProducts()
-    .subscribe((res: HttpResponse<any>)=>{  
-      console.log(res);  
-      this.card = res.body;  
-      this.products = res.body.products;
-    })  
+  ngOnInit() :void {
+    // this.apiService
+    // .getProducts()
+    // .subscribe((res: HttpResponse<any>)=>{  
+    //   console.log(res);  
+    //   this.card = res.body;  
+    //   this.products = res.body.products;
+    // })  
   }
 
   

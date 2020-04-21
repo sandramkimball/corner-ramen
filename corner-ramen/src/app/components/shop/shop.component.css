@@ -1,17 +1,22 @@
 div{
-    width: 60vw;
+    width: 65vw;
     border: 1px solid gray;
-    border-radius: 6px
+    border-radius: 6px;
+    margin: 5vh auto
 }
 
 div p{
     font-size: 2rem;
 }
+div ul{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 div li{
     background: #d8cc5c;
-    height: 100px;
-    width: 100px;
+    padding: 50px;;
     border-radius: 4px;
     margin: 10px;
+    text-align: center;
 }

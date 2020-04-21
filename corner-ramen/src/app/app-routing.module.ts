@@ -5,8 +5,8 @@ import { CardComponent } from './components/card/card.component';
 
 
 const routes: Routes = [
-  { path: '/reviews', component: ReviewComponent },
-  { path: '/products', component: CardComponent },
+  { path: 'reviews', component: ReviewComponent },
+  { path: 'products', component: CardComponent },
 ];
 
 @NgModule({

@@ -1,7 +1,8 @@
 export class Review{
-    //declare fields we want:
-    id:number; 
-    username:string;
-    comment?:string; 
-    image_url?:string;
+    // the constructor is a ts shortcut to declare class properties
+    constructor(
+        public id:number, 
+        public username:string,
+        public comment?:string, 
+        public image_url?:string) {}
 }

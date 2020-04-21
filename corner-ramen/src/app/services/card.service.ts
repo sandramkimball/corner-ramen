@@ -9,7 +9,7 @@ import {Card} from '../models/Card'
 })
 export class ProdService {
 
-  productUrl:string = '/products'
+  productUrl:string = 'products'
 
   constructor(private http:HttpClient) { }
 

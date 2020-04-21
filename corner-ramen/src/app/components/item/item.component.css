@@ -1,45 +1,10 @@
-
-
 div{
     width: 65vw;
-    font-size: 1.5rem;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
+    font-size: 3rem;
+    color: pink;
+    font-family:  'Dosis', sans-serif;
 }
-
-.add{
-    margin: auto 0;
-    background: orange;
-    color: #fff;
-    border: none;
-    padding: 5px 9px;
-    border-radius: 10%;
-    cursor: pointer;
-    float: right;
-    font-size: 1.75rem
+div p{
+    margin: auto
 }
-
-.card {
-    background: #f0f0f0;
-    padding: 10px;
-    border-radius: 6px;
-    margin: 2rem auto;
-    height: 30vh;
-    width: 25vh;
-}
-
-img{
-    width: 100%;
-    height: 60%;
-    object-fit: cover;
-}
-
-.is-added {
-    color: gray
-}
- h4{
-     font-weight: 700;
-     font-size: 1.75rem;
-     padding-bottom: 5px;
- }

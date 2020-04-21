@@ -55,3 +55,10 @@ New App Startup Workflow
 - 'ng add @angular/fire'
 - this autoupdates angular.json 'deploy'
 - 'ng deploy'
+
+<!-- Makaing HTTP Requests -->
+- add HttpClientModule and Observable to app.module.ts
+- inject HttpClient into api.service.ts constructor
+- create api methods in api.service 
+- add any options, header parser...
+- use api methods in component.ts's.
