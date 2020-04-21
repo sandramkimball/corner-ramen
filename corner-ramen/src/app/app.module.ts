@@ -1,17 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http'
-import {FormsModule } from '@angular/forms'
 
+// Components
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CardComponent } from './components/card/card.component';
 import { ItemComponent } from './components/item/item.component';
 import { HeaderComponent } from './components/layout/header/header.component';
-import { AddProdComponent } from './components/add-prod/add-prod.component';
 import { ShopComponent } from './components/shop/shop.component';
 import { ReviewComponent } from './components/review/review.component';
 import { HashtagComponent } from './components//hashtag/hashtag.component';
+import { AddProdComponent } from './components//add-prod/add-prod.component';
 
 @NgModule({
   declarations: [
@@ -19,16 +19,15 @@ import { HashtagComponent } from './components//hashtag/hashtag.component';
     CardComponent,
     ItemComponent,
     HeaderComponent,
-    AddProdComponent,
     ShopComponent,
     ReviewComponent,
-    HashtagComponent
+    HashtagComponent,
+    AddProdComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

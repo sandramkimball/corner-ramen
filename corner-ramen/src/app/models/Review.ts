@@ -3,5 +3,5 @@ export class Review{
     id:number; 
     username:string;
     comment?:string; 
-    imgage_url?:string;
+    image_url?:string;
 }

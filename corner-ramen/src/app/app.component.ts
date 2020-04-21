@@ -11,10 +11,6 @@ export class AppComponent {
 
   constructor(){ //methods run when app initialies - constructor runs before rendered on screen
     console.log('Noodle Time!') 
-    // this.changeName(Ramen Corner)
   }
 
-  // changeName(string:name):void{
-  //   this.name = name
-  // }
 }

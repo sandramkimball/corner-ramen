@@ -1,0 +1,17 @@
+div{
+    width: 60vw;
+    border: 1px solid gray;
+    border-radius: 6px
+}
+
+div p{
+    font-size: 2rem;
+}
+
+div li{
+    background: #d8cc5c;
+    height: 100px;
+    width: 100px;
+    border-radius: 4px;
+    margin: 10px;
+}

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Card} from '../../models/Card'
-import {ProdService} from '../../services/card.service'
+import { ApiService } from '../../api.service'
+import { HttpResponse } from '@angular/common/http';
 
 @Component({
   selector: 'app-card',
@@ -8,25 +9,20 @@ import {ProdService} from '../../services/card.service'
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
-  card:Card[]; //create a model of what card should look like
-  constructor(private prodService: ProdService) { }
+  card:Card[];  //create a model of what card shouldlook like
+
+  products = []
+  constructor(private apiService: ApiService) { }
 
   ngOnInit() {
-    this.prodService.getProducts().subscribe(products=>{
-      this.card = products
-    });
+    this.apiService
+    .getProducts()
+    .subscribe((res: HttpResponse<any>)=>{  
+      console.log(res);  
+      this.card = res.body;  
+      this.products = res.body.products;
+    })  
   }
 
-  deleteProd(card:Card){
-    // Remove from UI
-    this.card = this.card.filter(c=> c.id !== card.id)
-    // Remove from server
-    this.prodService.deleteProd(card).subscribe();
-  }
-
-  addNewProd(card:Card){
-    this.prodService.addNewProd(card).subscribe(product=> {
-      this.card.push(product)
-    });
-  }
+  
 }

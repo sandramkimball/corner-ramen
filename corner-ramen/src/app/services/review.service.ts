@@ -9,8 +9,7 @@ import {Review} from '../models/Review';
 })
 export class ReviewService {
 
-  reviewUrl:string = ''
-  todosLimit = '?_limit=10' 
+  reviewUrl:string = '/reviews'
 
   constructor(private http:HttpClient) { }
 

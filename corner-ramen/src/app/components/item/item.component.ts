@@ -1,6 +1,8 @@
-import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
-import {Card} from 'src/app/models/Card'
-import {ProdService} from '../../services/card.service'
+import { Component, OnInit, Input, } from '@angular/core';
+import {Card} from 'src/app/models/Card';
+import { ApiService } from '../../api.service';
+import { HttpResponse } from '@angular/common/http';
+import { retry } from 'rxjs/operators'
 
 @Component({
   selector: 'app-item',
@@ -9,32 +11,19 @@ import {ProdService} from '../../services/card.service'
 })
 export class ItemComponent implements OnInit {
   @Input() card: Card;
-  @Output() deleteProd: EventEmitter<Card> = new EventEmitter
   
-  constructor(private prodService:ProdService) { }
+  products = []
+  constructor(private apiService: ApiService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.apiService
+    .getReviews()
+    .pipe(retry(3))
+    .subscribe((res: HttpResponse<any>)=>{  
+      console.log(res);  
+      this.products = res.body;  
+    })  
   }
 
-  //set dynamic classes
-  setClasses(){
-    let classes = {
-      card: true,
-      'is-added': this.card.added
-    }
-    return classes;
-  }
-
-  onAdd(card){
-    //toggle in UI
-    card.added = !card.added
-    // toggle on server
-    this.prodService.addProd(card)
-    console.log(card)
-  }
-
-  onDelete(card){
-    this.deleteProd.emit(card)
-    console.log('delete')
-  }
+  
 }

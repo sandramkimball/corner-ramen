@@ -14,7 +14,7 @@ export class AddProdComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
   onSubmit(){
@@ -22,7 +22,6 @@ export class AddProdComponent implements OnInit {
       img: this.img,
       title: this.title,
       text: this.text,
-      added: false
     }
     this.addProd.emit(card)
   }
