@@ -10,7 +10,6 @@ export class AppComponent {
   name = 'Corner Ramen'
 
   constructor(){ //methods run when app initialies - constructor runs before rendered on screen
-    console.log('Noodle Time!') 
   }
 
 }

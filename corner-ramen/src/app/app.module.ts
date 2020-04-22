@@ -10,7 +10,8 @@ import { HeaderComponent } from './components/layout/header/header.component';
 import { ShopComponent } from './components/shop/shop.component';
 import { ReviewComponent } from './components/review/review.component';
 import { HashtagComponent } from './components//hashtag/hashtag.component';
-import { AddProdComponent } from './components//add-prod/add-prod.component';
+import { ViewDetailsComponent } from './components/view-details/view-details.component';
+import { PopupComponent } from './components/popup/popup.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AddProdComponent } from './components//add-prod/add-prod.component';
     ShopComponent,
     ReviewComponent,
     HashtagComponent,
-    AddProdComponent
+    ViewDetailsComponent,
+    PopupComponent
   ],
   imports: [
     BrowserModule,

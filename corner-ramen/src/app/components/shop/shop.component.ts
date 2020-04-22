@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Product } from 'src/app/models/Product'
-// import { HttpResponse } from '@angular/common/http';
 import { ApiService } from '../../api.service'
 
 @Component({
@@ -19,7 +18,6 @@ export class ShopComponent implements OnInit {
     .getProducts()
     .subscribe( (data)=>{
       this.products=data
-      console.log('Products', this.products)
     });
   }
 

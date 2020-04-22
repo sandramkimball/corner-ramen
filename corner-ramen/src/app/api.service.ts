@@ -87,7 +87,6 @@ export class ApiService {
       .get(this.SERVER_URL, { observe: "response"})
       .pipe(retry(3), 
       catchError(this.handleError), tap(res => {
-          console.log(res.headers.get('Link'));
           this.parseLinkHeader(res.headers.get('Link'));
       })); 
   }
@@ -98,7 +97,6 @@ export class ApiService {
       .get(url, {observe: 'response'})
       .pipe(retry(3),
       catchError(this.handleError), tap(res=> {
-          console.log(res.headers.get('Link'));
           this.parseLinkHeader(res.headers.get('Link'));
       }));
   }
@@ -114,7 +112,6 @@ export class ApiService {
       this.next   = links["next"];
     }),    
     catchError(this.handleError), tap(res=> {
-        console.log(res.headers.get('Link'));
         this.parseLinkHeader(res.headers.get('Link'));
     }));
   }
