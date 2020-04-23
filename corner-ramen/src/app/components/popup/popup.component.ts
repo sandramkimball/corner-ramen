@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Product } from '../../models/Product';
 
 @Component({
@@ -14,6 +14,9 @@ export class PopupComponent implements OnInit {
   @Input() popupDisplay: string;
 
   constructor() {
+    if(this.popupDisplay == undefined){
+      this.popupDisplay = 'none'
+    }
     console.log('popup input:', this.popupDisplay) 
   }
 

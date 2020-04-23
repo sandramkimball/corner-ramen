@@ -23,7 +23,6 @@ export class ViewDetailsComponent implements OnInit {
   // Sets product popup box display: inherit
   handleDisplay(){
     this.setDisplay.emit('inherit')
-    console.log('button output: inherit')
   }
 
 }

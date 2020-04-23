@@ -12,6 +12,7 @@ import { ReviewComponent } from './components/review/review.component';
 import { HashtagComponent } from './components//hashtag/hashtag.component';
 import { ViewDetailsComponent } from './components/view-details/view-details.component';
 import { PopupComponent } from './components/popup/popup.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PopupComponent } from './components/popup/popup.component';
     ReviewComponent,
     HashtagComponent,
     ViewDetailsComponent,
-    PopupComponent
+    PopupComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

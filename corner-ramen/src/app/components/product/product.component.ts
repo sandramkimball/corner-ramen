@@ -15,12 +15,18 @@ export class ProductComponent implements OnInit {
   @Input() product: Product;
 
   // Takes in updated popup display from view-details
-  @Input() setDisplay: string;
+  // @Input() setDisplay: string;
 
   // Outputs updated display:inherit to popup 
   @Output() popupDisplay = new EventEmitter<string>();
-  // takes $event input from view-details to output to popup
+ 
+  constructor() { 
+  }
 
+  ngOnInit() :void {
+  }
+
+  // takes $event input from view-details to output to popup
   handleDisplay($event: string){
     if($event == undefined){
       this.popupDisplay.emit('none')
@@ -29,15 +35,6 @@ export class ProductComponent implements OnInit {
       this.popupDisplay.emit($event)
       console.log('parent output:', $event)
     }
-  }
-  
-  constructor() { 
-    if(this.setDisplay == undefined){
-      this.popupDisplay.emit('none')
-    }
-  }
-
-  ngOnInit() :void {
   }
   
 

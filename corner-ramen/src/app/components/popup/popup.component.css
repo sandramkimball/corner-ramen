@@ -10,9 +10,7 @@ div{
     z-index: 10;
     top: 15vh;
     left: 30vw;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
+    
 }
 
 div p{

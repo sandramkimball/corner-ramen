@@ -5,50 +5,34 @@
     margin: 5rem auto;
     width: 60vw;
     height: 50vh;
-    padding: 10px;
     border-radius: 6px;
     background: url('https://images.unsplash.com/photo-1533567918232-40709b93fc5b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=993&q=80');
     background-size: cover;
     background-position: center;
     font-family: 'Dosis', sans-serif;
+    position: relative;
 }
 
 .welcome h3{
     margin: auto;
-    font-size: 4rem;
-    font-weight: 600;
-    color: white;
-    background: #0000007a;
-    width: 50%;
-    margin-top: 20vh;
-    font-family: 'Dosis', sans-serif;
-}
-
-.about{
-    width: 60vw;
-    margin: 10px auto;
-    background: #f7f0cc;
-    border-radius: 6px;
-}
-
-.about p{ 
-    padding: 25px 0;     
-    font-size: 1.75rem;
-    width: 45%;
-    margin: 0 auto;
+    position: absolute;
+    margin-top: 10%;
     text-align: center;
+    font-size: 4.5rem;
+    padding: 15px 0;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 0px 4px 8px black;
+    width: 100%;
     font-family: 'Dosis', sans-serif;
 }
 
-.vibe{
-    margin: 5vw auto;
-    display: flex;
-    width: 60vw;
-    justify-content: space-between;
-}
-
-.vibe img{
-    width: 27vw;
-    height: 30vw;
-    object-fit: cover;
+.welcome p{
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 0px 4px 8px black;
+    position: absolute;
+    margin-top: 20%;
+    width: 100%;
+    text-align: center;
 }
