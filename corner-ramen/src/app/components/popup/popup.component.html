@@ -1,9 +1,9 @@
-<div [style.display]="popupDisplay" >
+<div id='popup' [style.display]="displayStyle" >
     <p>Product Details</p>
     <img src="{{product.img}}" alt='product'/>
     <h4>{{product.title}}</h4>
     <p>{{product.text}}</p>
     <p>${{product.price}}</p>
-    <button (click)="handleDisplay()">Close</button>
+    <button (click)="handleClose()">Close</button>
 </div>
 

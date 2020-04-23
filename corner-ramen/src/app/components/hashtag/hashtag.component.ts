@@ -49,4 +49,11 @@ export class HashtagComponent implements OnInit {
     // })  
   }
 
+  // handleNext(){
+  // }
+
+  // handleBack(){
+
+  // }
+
 }

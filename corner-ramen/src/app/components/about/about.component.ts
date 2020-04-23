@@ -9,7 +9,8 @@ export class AboutComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() :void {
+    this.getDay()
   }
 
   // this function gets today's day and highlights it on the hours schedule
@@ -26,7 +27,7 @@ export class AboutComponent implements OnInit {
 
     let today = weekday[t]
 
-    document.querySelector(`.info .${today}`)[0].style.fontWeight(600)
+    document.querySelector(`.info .${today}`)[0].style.fontWeight(650)
   }
 
 }

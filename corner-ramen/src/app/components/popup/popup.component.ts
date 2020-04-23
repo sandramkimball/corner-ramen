@@ -10,23 +10,25 @@ import { Product } from '../../models/Product';
 export class PopupComponent implements OnInit {
   // Takes in product info
   @Input() product: Product;
+
   // Takes in updated popup display from parent
   @Input() popupDisplay: string;
 
+  displayStyle = 'none'
+  
   constructor() {
-    if(this.popupDisplay == undefined){
-      this.popupDisplay = 'none'
+  }
+
+  ngOnInit()  {  
+    if (this.popupDisplay == 'inherit'){
+      this.displayStyle = 'inherit'
     }
-    console.log('popup input:', this.popupDisplay) 
   }
 
-  ngOnInit() :void {
-  }
 
-  // Sets product popup display: none
-  handleDisplay(){
-    this.popupDisplay=('none')
-    console.log('popup output', this.popupDisplay)
+  // Closes popup window on click
+  handleClose(){
+    this.displayStyle=('none')
   }
 
 }

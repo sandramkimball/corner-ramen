@@ -11,7 +11,7 @@ export class ViewDetailsComponent implements OnInit {
   @Input() product:Product
 
   // Outputs display:inherit on button click
-  @Output() setDisplay = new EventEmitter<string>()
+  @Output() popupDisplay = new EventEmitter<string>()
 
 
   constructor() {
@@ -20,9 +20,9 @@ export class ViewDetailsComponent implements OnInit {
   ngOnInit() {
   }
 
-  // Sets product popup box display: inherit
-  handleDisplay(){
-    this.setDisplay.emit('inherit')
+  // Opens product popup on click
+  public handleDisplay(){
+    this.popupDisplay.emit('inherit')
   }
 
 }

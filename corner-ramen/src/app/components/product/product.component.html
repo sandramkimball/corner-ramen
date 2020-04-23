@@ -2,13 +2,9 @@
     <img src="{{product.img}}" alt='product'/>
     <h4>{{product.title}}</h4>
     <p>${{product.price}}</p>
-    <app-view-details
-        [product]="product"
-        (setDisplay) = "handleDisplay($event)"
-    >
-    </app-view-details>
+    <button (click)="handleOpen()">View Details</button>
     <app-popup
         [product]="product"
-        (popupDisplay) = "handleDisplay($event)"
+        [popupDisplay]='popupDisplay'
     ></app-popup>
 </div>
